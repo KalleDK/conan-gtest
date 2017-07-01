@@ -13,4 +13,4 @@ if(WIN32)
    endif()
 endif()
 
-add_subdirectory("googletest-release-1.8.0")
+add_subdirectory("googletest-4bab34d2084259cba67f3bfb51217c10d606e175")
