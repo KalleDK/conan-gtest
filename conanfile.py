@@ -6,7 +6,7 @@ from conans.util import files
 
 class GTestConan(ConanFile):
     name = "gtest"
-    version = "1.8.0"
+    version = "4bab34d2084259cba67f3bfb51217c10d606e175"
     ZIP_FOLDER_NAME = "googletest-release-%s" % version
     generators = "cmake"
     settings = "os", "arch", "compiler", "build_type"
@@ -27,7 +27,7 @@ class GTestConan(ConanFile):
                 pass
 
     def source(self):
-        zip_name = "release-%s.zip" % self.version
+        zip_name = "%s.zip" % self.version
         url = "https://github.com/google/googletest/archive/%s" % zip_name
         tools.download(url, zip_name)
         tools.unzip(zip_name)
